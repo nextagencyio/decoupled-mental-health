@@ -1,0 +1,203 @@
+{
+  "data": {
+    "nodeTherapists": {
+      "__typename": "NodeTherapistConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTherapist",
+          "id": "therapist-williams",
+          "title": "Dr. Naomi Williams, PhD",
+          "path": "/team/dr-naomi-williams",
+          "body": {
+            "processed": "<p>Dr. Naomi Williams is the founder and clinical director of Clearpath Counseling & Wellness. With over 20 years of clinical experience, she is recognized as one of the region's leading experts in anxiety disorders and trauma recovery. Her warm, insightful approach helps clients feel understood and empowered from the very first session.</p><p>Dr. Williams has a particular passion for helping high-achieving professionals who struggle with perfectionism, imposter syndrome, and burnout. She integrates Cognitive Behavioral Therapy, EMDR, and mindfulness-based approaches in her practice.</p><p>She is a frequent speaker at professional conferences and has published articles in the Journal of Clinical Psychology and Psychology Today. She also provides clinical supervision for early-career therapists.</p>",
+            "summary": "Dr. Naomi Williams is the founder and clinical director of Clearpath Counseling & Wellness. With over 20 years of clinical experience, she is recognized as one of the region's leading experts in anxie"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
+            "alt": "Dr. Naomi Williams, licensed psychologist, professional portrait",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "credentials": "PhD, Licensed Psychologist",
+          "licenseNumber": "PSY-28461",
+          "specialties": [
+            "Anxiety Disorders",
+            "Trauma & PTSD",
+            "Burnout & Perfectionism",
+            "Women's Issues"
+          ],
+          "approaches": [
+            "Cognitive Behavioral Therapy (CBT)",
+            "EMDR",
+            "Mindfulness-Based Cognitive Therapy",
+            "Psychodynamic Therapy"
+          ],
+          "education": {
+            "processed": "<p>Doctor of Philosophy in Clinical Psychology, University of Virginia<br>Pre-Doctoral Internship, VA Medical Center<br>Bachelor of Arts in Psychology, Spelman College</p>",
+            "summary": "Doctor of Philosophy in Clinical Psychology, University of VirginiaPre-Doctoral Internship, VA Medical CenterBachelor of Arts in Psychology, Spelman College"
+          },
+          "languages": [
+            "English"
+          ],
+          "acceptingClients": true,
+          "therapistRole": [
+            {
+              "id": "Licensed Psychologist",
+              "name": "Licensed Psychologist"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeTherapist",
+          "id": "therapist-reyes",
+          "title": "Carlos Reyes, LCSW",
+          "path": "/team/carlos-reyes-lcsw",
+          "body": {
+            "processed": "<p>Carlos Reyes is a Licensed Clinical Social Worker with deep expertise in couples therapy and family systems work. After earning his MSW from the University of Michigan, he completed advanced training in the Gottman Method and Emotionally Focused Therapy, equipping him with some of the most effective tools for helping couples repair and strengthen their relationships.</p><p>Carlos brings a culturally responsive lens to his work, understanding how cultural background, identity, and family of origin shape our relationships and sense of self. He is bilingual in English and Spanish and serves a diverse client population.</p><p>Before joining Clearpath, Carlos spent eight years working in community mental health, providing therapy to underserved populations. This experience instilled a deep commitment to making quality mental health care accessible to everyone.</p>",
+            "summary": "Carlos Reyes is a Licensed Clinical Social Worker with deep expertise in couples therapy and family systems work. After earning his MSW from the University of Michigan, he completed advanced training "
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "alt": "Carlos Reyes, licensed clinical social worker, professional portrait",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "credentials": "LCSW",
+          "licenseNumber": "LCSW-44782",
+          "specialties": [
+            "Couples & Marriage Therapy",
+            "Family Conflict",
+            "Cultural Identity",
+            "Depression"
+          ],
+          "approaches": [
+            "Gottman Method",
+            "Emotionally Focused Therapy (EFT)",
+            "Narrative Therapy",
+            "Family Systems Therapy"
+          ],
+          "education": {
+            "processed": "<p>Master of Social Work, University of Michigan<br>Advanced Training in Gottman Method Couples Therapy<br>Certified Emotionally Focused Therapist<br>Bachelor of Arts in Sociology, University of Texas at Austin</p>",
+            "summary": "Master of Social Work, University of MichiganAdvanced Training in Gottman Method Couples TherapyCertified Emotionally Focused TherapistBachelor of Arts in Sociology, University of Texas at Austin"
+          },
+          "languages": [
+            "English",
+            "Spanish"
+          ],
+          "acceptingClients": true,
+          "therapistRole": [
+            {
+              "id": "Licensed Clinical Social Worker",
+              "name": "Licensed Clinical Social Worker"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeTherapist",
+          "id": "therapist-park",
+          "title": "Dr. Sarah Park, PsyD",
+          "path": "/team/dr-sarah-park",
+          "body": {
+            "processed": "<p>Dr. Sarah Park specializes in working with children, adolescents, and their families. Her gentle, creative approach puts young clients at ease while effectively addressing their emotional and behavioral challenges. She is trained in play therapy, Trauma-Focused CBT, and Parent-Child Interaction Therapy (PCIT).</p><p>Dr. Park is especially skilled at working with children who have experienced trauma, family disruption, or significant life changes. She works closely with parents and caregivers, providing them with the skills and understanding they need to support their child's healing and development.</p><p>She maintains active collaborations with local pediatricians, school counselors, and child welfare professionals to provide coordinated, comprehensive care for her young clients.</p>",
+            "summary": "Dr. Sarah Park specializes in working with children, adolescents, and their families. Her gentle, creative approach puts young clients at ease while effectively addressing their emotional and behavior"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80",
+            "alt": "Dr. Sarah Park, child psychologist, professional portrait",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "credentials": "PsyD, Licensed Psychologist",
+          "licenseNumber": "PSY-31205",
+          "specialties": [
+            "Child & Adolescent Therapy",
+            "Childhood Trauma",
+            "ADHD",
+            "Parenting Support"
+          ],
+          "approaches": [
+            "Play Therapy",
+            "Trauma-Focused CBT",
+            "Parent-Child Interaction Therapy (PCIT)",
+            "Art Therapy"
+          ],
+          "education": {
+            "processed": "<p>Doctor of Psychology, Rutgers University<br>Pre-Doctoral Internship in Child & Adolescent Psychology, Children's Hospital of Philadelphia<br>Bachelor of Science in Psychology, University of Michigan</p>",
+            "summary": "Doctor of Psychology, Rutgers UniversityPre-Doctoral Internship in Child & Adolescent Psychology, Children's Hospital of PhiladelphiaBachelor of Science in Psychology, University of Michigan"
+          },
+          "languages": [
+            "English",
+            "Korean"
+          ],
+          "acceptingClients": true,
+          "therapistRole": [
+            {
+              "id": "Licensed Psychologist",
+              "name": "Licensed Psychologist"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Clearpath Counseling & Wellness",
+          "path": "/homepage",
+          "heroTitle": "Your Journey to Wellness Starts Here",
+          "heroSubtitle": "Clearpath Counseling & Wellness",
+          "heroDescription": {
+            "processed": "<p>We provide compassionate, evidence-based mental health care for individuals, couples, and families. Our team of licensed therapists creates a safe, supportive space where you can explore challenges, develop coping strategies, and build a more fulfilling life.</p>",
+            "summary": "We provide compassionate, evidence-based mental health care for individuals, couples, and families. Our team of licensed therapists creates a safe, supportive space where you can explore challenges, d"
+          },
+          "heroImage": {
+            "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+            "alt": "Peaceful therapy office with comfortable seating and warm natural light",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-clients",
+              "title": "",
+              "number": "5,000+",
+              "label": "Clients Supported"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-therapists",
+              "title": "",
+              "number": "12",
+              "label": "Licensed Therapists"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-experience",
+              "title": "",
+              "number": "15+",
+              "label": "Years in Practice"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-satisfaction",
+              "title": "",
+              "number": "96%",
+              "label": "Client Satisfaction"
+            }
+          ],
+          "featuredItemsTitle": "Our Services",
+          "ctaTitle": "Take the First Step",
+          "ctaDescription": {
+            "processed": "<p>Reaching out for help takes courage, and we honor that. Contact us for a free 15-minute phone consultation to discuss your needs and find the right therapist for you. We offer in-person and telehealth appointments with flexible evening and weekend availability.</p>",
+            "summary": "Reaching out for help takes courage, and we honor that. Contact us for a free 15-minute phone consultation to discuss your needs and find the right therapist for you. We offer in-person and telehealth"
+          },
+          "ctaPrimary": "Request a Consultation",
+          "ctaSecondary": "Call Us Today"
+        }
+      ]
+    }
+  }
+}

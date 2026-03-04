@@ -1,0 +1,159 @@
+{
+  "data": {
+    "nodeServices": {
+      "__typename": "NodeServiceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeService",
+          "id": "service-individual",
+          "title": "Individual Therapy",
+          "path": "/services/individual-therapy",
+          "body": {
+            "processed": "<p>Individual therapy provides a confidential, one-on-one space to explore your thoughts, feelings, and behaviors with a trained professional. Whether you're dealing with a specific issue or seeking personal growth, your therapist will work collaboratively with you to develop strategies for positive change.</p><h2>What We Treat</h2><ul><li>Anxiety disorders (generalized anxiety, social anxiety, panic disorder)</li><li>Depression and mood disorders</li><li>Trauma and PTSD</li><li>Grief and loss</li><li>Life transitions and adjustment difficulties</li><li>Self-esteem and identity concerns</li><li>Chronic stress and burnout</li><li>Relationship challenges</li></ul><h2>Our Approach</h2><p>We draw from a range of evidence-based therapeutic approaches, including Cognitive Behavioral Therapy (CBT), EMDR, Acceptance and Commitment Therapy (ACT), psychodynamic therapy, and mindfulness-based interventions. Your therapist will tailor their approach to your unique needs and goals.</p><h2>What to Expect</h2><p>The first session focuses on understanding your history, current concerns, and goals for therapy. Together, you and your therapist will develop a personalized treatment plan. Most clients begin with weekly sessions, adjusting frequency as progress is made.</p>",
+            "summary": "Individual therapy provides a confidential, one-on-one space to explore your thoughts, feelings, and behaviors with a trained professional. Whether you're dealing with a specific issue or seeking pers"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+            "alt": "Comfortable therapy room with two chairs and soft lighting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>Confidential one-on-one therapy for anxiety, depression, trauma, life transitions, and personal growth.</p>",
+            "summary": "Confidential one-on-one therapy for anxiety, depression, trauma, life transitions, and personal growth."
+          },
+          "sessionFormat": "In-person or Telehealth",
+          "sessionDuration": "50 minutes",
+          "ageGroup": "Adults (18+)",
+          "insuranceAccepted": true,
+          "serviceCategory": [
+            {
+              "id": "Individual Therapy",
+              "name": "Individual Therapy"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-couples",
+          "title": "Couples Therapy",
+          "path": "/services/couples-therapy",
+          "body": {
+            "processed": "<p>Every relationship faces challenges. Couples therapy provides a structured, supportive environment where partners can improve communication, resolve conflicts, rebuild trust, and deepen their connection. Our therapists are trained in the Gottman Method and Emotionally Focused Therapy (EFT), two of the most researched and effective approaches to couples work.</p><h2>Common Issues We Address</h2><ul><li>Communication breakdowns and frequent conflict</li><li>Trust repair after infidelity or betrayal</li><li>Emotional distance and disconnection</li><li>Navigating major life transitions together</li><li>Differences in parenting styles</li><li>Intimacy and sexual concerns</li><li>Premarital counseling and relationship enrichment</li></ul><h2>How Couples Therapy Works</h2><p>We typically begin with an initial joint session followed by individual sessions with each partner to understand both perspectives. From there, we develop a customized treatment plan focused on your relationship goals. Sessions are held weekly or biweekly, depending on your needs.</p><h2>When to Seek Help</h2><p>You don't need to wait until your relationship is in crisis. Many couples benefit most from therapy when they seek help at the first signs of difficulty. Think of it as an investment in your most important partnership.</p>",
+            "summary": "Every relationship faces challenges. Couples therapy provides a structured, supportive environment where partners can improve communication, resolve conflicts, rebuild trust, and deepen their connecti"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+            "alt": "Couple sitting together having a meaningful conversation",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>Strengthen your relationship through improved communication, conflict resolution, and emotional connection.</p>",
+            "summary": "Strengthen your relationship through improved communication, conflict resolution, and emotional connection."
+          },
+          "sessionFormat": "In-person or Telehealth",
+          "sessionDuration": "75 minutes",
+          "ageGroup": "Adults (18+)",
+          "insuranceAccepted": true,
+          "serviceCategory": [
+            {
+              "id": "Couples Therapy",
+              "name": "Couples Therapy"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-child-adolescent",
+          "title": "Child & Adolescent Therapy",
+          "path": "/services/child-and-adolescent-therapy",
+          "body": {
+            "processed": "<p>Children and teenagers face unique challenges as they grow and develop. Our child and adolescent specialists use developmentally appropriate, engaging therapeutic techniques to help young people navigate difficult emotions, build resilience, and develop healthy coping skills.</p><h2>Issues We Help With</h2><ul><li>Anxiety and worry</li><li>Depression and mood changes</li><li>ADHD and executive function challenges</li><li>Behavioral difficulties at home or school</li><li>Bullying and social challenges</li><li>Family changes (divorce, blended families, new siblings)</li><li>Grief and loss</li><li>Self-harm and suicidal ideation</li></ul><h2>Our Methods</h2><p>For younger children (ages 5-12), we often use play therapy, art therapy, and social stories to help them express and process their experiences. For adolescents, we integrate CBT, DBT skills training, and motivational interviewing in a way that respects their growing independence while providing the guidance they need.</p><h2>Family Involvement</h2><p>We believe that family involvement is key to a child's therapeutic progress. Parents are active partners in the treatment process, receiving regular updates and learning skills to support their child's growth at home.</p>",
+            "summary": "Children and teenagers face unique challenges as they grow and develop. Our child and adolescent specialists use developmentally appropriate, engaging therapeutic techniques to help young people navig"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+            "alt": "Child engaged in creative art therapy activity",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>Specialized therapy for children and teens using play, art, and evidence-based approaches tailored to their developmental stage.</p>",
+            "summary": "Specialized therapy for children and teens using play, art, and evidence-based approaches tailored to their developmental stage."
+          },
+          "sessionFormat": "In-person",
+          "sessionDuration": "45-50 minutes",
+          "ageGroup": "Children & Adolescents (5-17)",
+          "insuranceAccepted": true,
+          "serviceCategory": [
+            {
+              "id": "Child & Adolescent",
+              "name": "Child & Adolescent"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

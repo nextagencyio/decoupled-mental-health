@@ -1,0 +1,324 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Mental health practice homepage with hero, statistics, and calls to action",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text" },
+        { "id": "hero_image", "label": "Hero Image", "type": "image" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]" },
+        { "id": "featured_items_title", "label": "Featured Items Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "service",
+      "label": "Service",
+      "description": "Therapy and counseling services offered by the practice",
+      "body": true,
+      "fields": [
+        { "id": "image", "label": "Service Image", "type": "image" },
+        { "id": "summary", "label": "Summary", "type": "text" },
+        { "id": "session_format", "label": "Session Format", "type": "string" },
+        { "id": "session_duration", "label": "Session Duration", "type": "string" },
+        { "id": "age_group", "label": "Age Group", "type": "string" },
+        { "id": "insurance_accepted", "label": "Insurance Accepted", "type": "bool" },
+        { "id": "service_category", "label": "Service Category", "type": "term(service_categories)[]" }
+      ]
+    },
+    {
+      "bundle": "therapist",
+      "label": "Therapist",
+      "description": "Therapists and counselors on staff",
+      "body": true,
+      "fields": [
+        { "id": "image", "label": "Portrait Photo", "type": "image" },
+        { "id": "credentials", "label": "Credentials", "type": "string" },
+        { "id": "license_number", "label": "License Number", "type": "string" },
+        { "id": "specialties", "label": "Specialties", "type": "string[]" },
+        { "id": "approaches", "label": "Therapeutic Approaches", "type": "string[]" },
+        { "id": "education", "label": "Education", "type": "text" },
+        { "id": "languages", "label": "Languages Spoken", "type": "string[]" },
+        { "id": "accepting_clients", "label": "Accepting New Clients", "type": "bool" },
+        { "id": "therapist_role", "label": "Role", "type": "term(therapist_roles)[]" }
+      ]
+    },
+    {
+      "bundle": "resource",
+      "label": "Resource",
+      "description": "Mental health educational resources and articles",
+      "body": true,
+      "fields": [
+        { "id": "image", "label": "Featured Image", "type": "image" },
+        { "id": "summary", "label": "Summary", "type": "text" },
+        { "id": "resource_topic", "label": "Topic", "type": "term(resource_topics)[]" },
+        { "id": "author_name", "label": "Author", "type": "string" },
+        { "id": "published_date", "label": "Published Date", "type": "datetime" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!" },
+        { "id": "label", "label": "Label", "type": "string!" }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vid": "service_categories",
+      "name": "Service Categories",
+      "terms": [
+        { "name": "Individual Therapy" },
+        { "name": "Couples Therapy" },
+        { "name": "Family Therapy" },
+        { "name": "Group Therapy" },
+        { "name": "Child & Adolescent" },
+        { "name": "Psychiatric Services" },
+        { "name": "Assessment & Testing" }
+      ]
+    },
+    {
+      "vid": "therapist_roles",
+      "name": "Therapist Roles",
+      "terms": [
+        { "name": "Licensed Psychologist" },
+        { "name": "Licensed Clinical Social Worker" },
+        { "name": "Licensed Professional Counselor" },
+        { "name": "Psychiatrist" },
+        { "name": "Marriage & Family Therapist" }
+      ]
+    },
+    {
+      "vid": "resource_topics",
+      "name": "Resource Topics",
+      "terms": [
+        { "name": "Anxiety" },
+        { "name": "Depression" },
+        { "name": "Relationships" },
+        { "name": "Stress Management" },
+        { "name": "Grief & Loss" },
+        { "name": "Self-Care" },
+        { "name": "Trauma" },
+        { "name": "Parenting" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-clients",
+      "type": "paragraph.stat_item",
+      "values": { "number": "5,000+", "label": "Clients Supported" }
+    },
+    {
+      "id": "stat-therapists",
+      "type": "paragraph.stat_item",
+      "values": { "number": "12", "label": "Licensed Therapists" }
+    },
+    {
+      "id": "stat-experience",
+      "type": "paragraph.stat_item",
+      "values": { "number": "15+", "label": "Years in Practice" }
+    },
+    {
+      "id": "stat-satisfaction",
+      "type": "paragraph.stat_item",
+      "values": { "number": "96%", "label": "Client Satisfaction" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to Clearpath Counseling & Wellness",
+        "hero_title": "Your Journey to Wellness Starts Here",
+        "hero_subtitle": "Clearpath Counseling & Wellness",
+        "hero_description": "<p>We provide compassionate, evidence-based mental health care for individuals, couples, and families. Our team of licensed therapists creates a safe, supportive space where you can explore challenges, develop coping strategies, and build a more fulfilling life.</p>",
+        "hero_image": { "uri": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80", "alt": "Peaceful therapy office with comfortable seating and warm natural light" },
+        "stats_items": ["@stat-clients", "@stat-therapists", "@stat-experience", "@stat-satisfaction"],
+        "featured_items_title": "Our Services",
+        "cta_title": "Take the First Step",
+        "cta_description": "<p>Reaching out for help takes courage, and we honor that. Contact us for a free 15-minute phone consultation to discuss your needs and find the right therapist for you. We offer in-person and telehealth appointments with flexible evening and weekend availability.</p>",
+        "cta_primary": "Request a Consultation",
+        "cta_secondary": "Call Us Today"
+      }
+    },
+    {
+      "id": "service-individual",
+      "type": "node.service",
+      "path": "/services/individual-therapy",
+      "values": {
+        "title": "Individual Therapy",
+        "body": "<p>Individual therapy provides a confidential, one-on-one space to explore your thoughts, feelings, and behaviors with a trained professional. Whether you're dealing with a specific issue or seeking personal growth, your therapist will work collaboratively with you to develop strategies for positive change.</p><h2>What We Treat</h2><ul><li>Anxiety disorders (generalized anxiety, social anxiety, panic disorder)</li><li>Depression and mood disorders</li><li>Trauma and PTSD</li><li>Grief and loss</li><li>Life transitions and adjustment difficulties</li><li>Self-esteem and identity concerns</li><li>Chronic stress and burnout</li><li>Relationship challenges</li></ul><h2>Our Approach</h2><p>We draw from a range of evidence-based therapeutic approaches, including Cognitive Behavioral Therapy (CBT), EMDR, Acceptance and Commitment Therapy (ACT), psychodynamic therapy, and mindfulness-based interventions. Your therapist will tailor their approach to your unique needs and goals.</p><h2>What to Expect</h2><p>The first session focuses on understanding your history, current concerns, and goals for therapy. Together, you and your therapist will develop a personalized treatment plan. Most clients begin with weekly sessions, adjusting frequency as progress is made.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80", "alt": "Comfortable therapy room with two chairs and soft lighting" },
+        "summary": "<p>Confidential one-on-one therapy for anxiety, depression, trauma, life transitions, and personal growth.</p>",
+        "session_format": "In-person or Telehealth",
+        "session_duration": "50 minutes",
+        "age_group": "Adults (18+)",
+        "insurance_accepted": true,
+        "service_category": ["Individual Therapy"]
+      }
+    },
+    {
+      "id": "service-couples",
+      "type": "node.service",
+      "path": "/services/couples-therapy",
+      "values": {
+        "title": "Couples Therapy",
+        "body": "<p>Every relationship faces challenges. Couples therapy provides a structured, supportive environment where partners can improve communication, resolve conflicts, rebuild trust, and deepen their connection. Our therapists are trained in the Gottman Method and Emotionally Focused Therapy (EFT), two of the most researched and effective approaches to couples work.</p><h2>Common Issues We Address</h2><ul><li>Communication breakdowns and frequent conflict</li><li>Trust repair after infidelity or betrayal</li><li>Emotional distance and disconnection</li><li>Navigating major life transitions together</li><li>Differences in parenting styles</li><li>Intimacy and sexual concerns</li><li>Premarital counseling and relationship enrichment</li></ul><h2>How Couples Therapy Works</h2><p>We typically begin with an initial joint session followed by individual sessions with each partner to understand both perspectives. From there, we develop a customized treatment plan focused on your relationship goals. Sessions are held weekly or biweekly, depending on your needs.</p><h2>When to Seek Help</h2><p>You don't need to wait until your relationship is in crisis. Many couples benefit most from therapy when they seek help at the first signs of difficulty. Think of it as an investment in your most important partnership.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80", "alt": "Couple sitting together having a meaningful conversation" },
+        "summary": "<p>Strengthen your relationship through improved communication, conflict resolution, and emotional connection.</p>",
+        "session_format": "In-person or Telehealth",
+        "session_duration": "75 minutes",
+        "age_group": "Adults (18+)",
+        "insurance_accepted": true,
+        "service_category": ["Couples Therapy"]
+      }
+    },
+    {
+      "id": "service-child-adolescent",
+      "type": "node.service",
+      "path": "/services/child-and-adolescent-therapy",
+      "values": {
+        "title": "Child & Adolescent Therapy",
+        "body": "<p>Children and teenagers face unique challenges as they grow and develop. Our child and adolescent specialists use developmentally appropriate, engaging therapeutic techniques to help young people navigate difficult emotions, build resilience, and develop healthy coping skills.</p><h2>Issues We Help With</h2><ul><li>Anxiety and worry</li><li>Depression and mood changes</li><li>ADHD and executive function challenges</li><li>Behavioral difficulties at home or school</li><li>Bullying and social challenges</li><li>Family changes (divorce, blended families, new siblings)</li><li>Grief and loss</li><li>Self-harm and suicidal ideation</li></ul><h2>Our Methods</h2><p>For younger children (ages 5-12), we often use play therapy, art therapy, and social stories to help them express and process their experiences. For adolescents, we integrate CBT, DBT skills training, and motivational interviewing in a way that respects their growing independence while providing the guidance they need.</p><h2>Family Involvement</h2><p>We believe that family involvement is key to a child's therapeutic progress. Parents are active partners in the treatment process, receiving regular updates and learning skills to support their child's growth at home.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80", "alt": "Child engaged in creative art therapy activity" },
+        "summary": "<p>Specialized therapy for children and teens using play, art, and evidence-based approaches tailored to their developmental stage.</p>",
+        "session_format": "In-person",
+        "session_duration": "45-50 minutes",
+        "age_group": "Children & Adolescents (5-17)",
+        "insurance_accepted": true,
+        "service_category": ["Child & Adolescent"]
+      }
+    },
+    {
+      "id": "therapist-williams",
+      "type": "node.therapist",
+      "path": "/team/dr-naomi-williams",
+      "values": {
+        "title": "Dr. Naomi Williams, PhD",
+        "body": "<p>Dr. Naomi Williams is the founder and clinical director of Clearpath Counseling & Wellness. With over 20 years of clinical experience, she is recognized as one of the region's leading experts in anxiety disorders and trauma recovery. Her warm, insightful approach helps clients feel understood and empowered from the very first session.</p><p>Dr. Williams has a particular passion for helping high-achieving professionals who struggle with perfectionism, imposter syndrome, and burnout. She integrates Cognitive Behavioral Therapy, EMDR, and mindfulness-based approaches in her practice.</p><p>She is a frequent speaker at professional conferences and has published articles in the Journal of Clinical Psychology and Psychology Today. She also provides clinical supervision for early-career therapists.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80", "alt": "Dr. Naomi Williams, licensed psychologist, professional portrait" },
+        "credentials": "PhD, Licensed Psychologist",
+        "license_number": "PSY-28461",
+        "specialties": ["Anxiety Disorders", "Trauma & PTSD", "Burnout & Perfectionism", "Women's Issues"],
+        "approaches": ["Cognitive Behavioral Therapy (CBT)", "EMDR", "Mindfulness-Based Cognitive Therapy", "Psychodynamic Therapy"],
+        "education": "<p>Doctor of Philosophy in Clinical Psychology, University of Virginia<br>Pre-Doctoral Internship, VA Medical Center<br>Bachelor of Arts in Psychology, Spelman College</p>",
+        "languages": ["English"],
+        "accepting_clients": true,
+        "therapist_role": ["Licensed Psychologist"]
+      }
+    },
+    {
+      "id": "therapist-reyes",
+      "type": "node.therapist",
+      "path": "/team/carlos-reyes-lcsw",
+      "values": {
+        "title": "Carlos Reyes, LCSW",
+        "body": "<p>Carlos Reyes is a Licensed Clinical Social Worker with deep expertise in couples therapy and family systems work. After earning his MSW from the University of Michigan, he completed advanced training in the Gottman Method and Emotionally Focused Therapy, equipping him with some of the most effective tools for helping couples repair and strengthen their relationships.</p><p>Carlos brings a culturally responsive lens to his work, understanding how cultural background, identity, and family of origin shape our relationships and sense of self. He is bilingual in English and Spanish and serves a diverse client population.</p><p>Before joining Clearpath, Carlos spent eight years working in community mental health, providing therapy to underserved populations. This experience instilled a deep commitment to making quality mental health care accessible to everyone.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80", "alt": "Carlos Reyes, licensed clinical social worker, professional portrait" },
+        "credentials": "LCSW",
+        "license_number": "LCSW-44782",
+        "specialties": ["Couples & Marriage Therapy", "Family Conflict", "Cultural Identity", "Depression"],
+        "approaches": ["Gottman Method", "Emotionally Focused Therapy (EFT)", "Narrative Therapy", "Family Systems Therapy"],
+        "education": "<p>Master of Social Work, University of Michigan<br>Advanced Training in Gottman Method Couples Therapy<br>Certified Emotionally Focused Therapist<br>Bachelor of Arts in Sociology, University of Texas at Austin</p>",
+        "languages": ["English", "Spanish"],
+        "accepting_clients": true,
+        "therapist_role": ["Licensed Clinical Social Worker"]
+      }
+    },
+    {
+      "id": "therapist-park",
+      "type": "node.therapist",
+      "path": "/team/dr-sarah-park",
+      "values": {
+        "title": "Dr. Sarah Park, PsyD",
+        "body": "<p>Dr. Sarah Park specializes in working with children, adolescents, and their families. Her gentle, creative approach puts young clients at ease while effectively addressing their emotional and behavioral challenges. She is trained in play therapy, Trauma-Focused CBT, and Parent-Child Interaction Therapy (PCIT).</p><p>Dr. Park is especially skilled at working with children who have experienced trauma, family disruption, or significant life changes. She works closely with parents and caregivers, providing them with the skills and understanding they need to support their child's healing and development.</p><p>She maintains active collaborations with local pediatricians, school counselors, and child welfare professionals to provide coordinated, comprehensive care for her young clients.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80", "alt": "Dr. Sarah Park, child psychologist, professional portrait" },
+        "credentials": "PsyD, Licensed Psychologist",
+        "license_number": "PSY-31205",
+        "specialties": ["Child & Adolescent Therapy", "Childhood Trauma", "ADHD", "Parenting Support"],
+        "approaches": ["Play Therapy", "Trauma-Focused CBT", "Parent-Child Interaction Therapy (PCIT)", "Art Therapy"],
+        "education": "<p>Doctor of Psychology, Rutgers University<br>Pre-Doctoral Internship in Child & Adolescent Psychology, Children's Hospital of Philadelphia<br>Bachelor of Science in Psychology, University of Michigan</p>",
+        "languages": ["English", "Korean"],
+        "accepting_clients": true,
+        "therapist_role": ["Licensed Psychologist"]
+      }
+    },
+    {
+      "id": "resource-anxiety-coping",
+      "type": "node.resource",
+      "path": "/resources/coping-strategies-for-anxiety",
+      "values": {
+        "title": "5 Evidence-Based Coping Strategies for Anxiety",
+        "body": "<p>Anxiety is one of the most common mental health challenges, affecting over 40 million adults in the United States. While professional therapy is often the most effective treatment, there are evidence-based strategies you can practice on your own to manage anxious thoughts and physical symptoms.</p><h2>1. Deep Breathing (4-7-8 Technique)</h2><p>When anxiety strikes, your body's fight-or-flight response kicks in, causing rapid, shallow breathing. The 4-7-8 breathing technique activates your parasympathetic nervous system, signaling your body to calm down:</p><ul><li>Inhale through your nose for 4 seconds</li><li>Hold your breath for 7 seconds</li><li>Exhale slowly through your mouth for 8 seconds</li><li>Repeat 3-4 cycles</li></ul><h2>2. Grounding with the 5-4-3-2-1 Method</h2><p>This sensory awareness exercise pulls you out of anxious thoughts and into the present moment. Identify 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.</p><h2>3. Cognitive Restructuring</h2><p>Challenge anxious thoughts by asking: Is this thought based on fact or feeling? What evidence supports or contradicts it? What would I say to a friend thinking this? What's the most realistic outcome?</p><h2>4. Progressive Muscle Relaxation</h2><p>Systematically tense and release each muscle group in your body, starting from your toes and working up to your head. Hold each tension for 5 seconds, then release for 15 seconds, noticing the contrast between tension and relaxation.</p><h2>5. Structured Worry Time</h2><p>Designate a specific 15-minute window each day as your 'worry time.' When anxious thoughts arise outside this window, write them down and postpone them to your designated time. This trains your brain that worrying has its place but doesn't need to consume your entire day.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80", "alt": "Person practicing meditation in a peaceful outdoor setting" },
+        "summary": "<p>Practical, research-backed techniques for managing anxiety, including breathing exercises, grounding, and cognitive restructuring.</p>",
+        "resource_topic": ["Anxiety", "Self-Care", "Stress Management"],
+        "author_name": "Dr. Naomi Williams",
+        "published_date": "2025-11-10T00:00:00"
+      }
+    },
+    {
+      "id": "resource-relationship-communication",
+      "type": "node.resource",
+      "path": "/resources/improving-communication-in-relationships",
+      "values": {
+        "title": "Improving Communication in Your Relationship",
+        "body": "<p>Communication is the foundation of every healthy relationship, yet it's one of the most common areas where couples struggle. Research by Dr. John Gottman has identified specific communication patterns that predict relationship success or failure. Here's how to build healthier patterns.</p><h2>The Four Horsemen (and Their Antidotes)</h2><p>Gottman identified four destructive communication patterns he calls the 'Four Horsemen of the Apocalypse':</p><ul><li><strong>Criticism</strong> (attacking character) -- Antidote: Use 'I' statements and express needs directly</li><li><strong>Contempt</strong> (expressing superiority or disgust) -- Antidote: Build a culture of appreciation and respect</li><li><strong>Defensiveness</strong> (refusing to take responsibility) -- Antidote: Accept responsibility, even for a small part</li><li><strong>Stonewalling</strong> (withdrawing and shutting down) -- Antidote: Practice self-soothing and take breaks when overwhelmed</li></ul><h2>Active Listening Skills</h2><p>When your partner is speaking, give them your full attention. Put away devices, maintain eye contact, and reflect back what you heard before responding. The goal is understanding, not winning.</p><h2>The Soft Start-Up</h2><p>How you bring up a concern determines 96% of the outcome of the conversation. Start gently by describing what you observed, how it made you feel, and what you need, without blame or criticism.</p><h2>Repair Attempts</h2><p>Every couple fights. What matters is your ability to make and receive repair attempts -- efforts to de-escalate tension and reconnect during or after conflict. A repair can be as simple as 'I'm sorry, let me try that again' or reaching for your partner's hand.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80", "alt": "Couple having an open conversation while sitting together" },
+        "summary": "<p>Learn research-backed communication skills to resolve conflict and strengthen your relationship connection.</p>",
+        "resource_topic": ["Relationships", "Stress Management"],
+        "author_name": "Carlos Reyes, LCSW",
+        "published_date": "2026-01-05T00:00:00"
+      }
+    },
+    {
+      "id": "resource-grief",
+      "type": "node.resource",
+      "path": "/resources/understanding-grief-and-loss",
+      "values": {
+        "title": "Understanding Grief: There Is No Right Way to Mourn",
+        "body": "<p>Grief is one of the most universal human experiences, yet it remains deeply personal and often misunderstood. Whether you've lost a loved one, a relationship, a job, or a sense of identity, grief is the natural response to any significant loss.</p><h2>Beyond the Five Stages</h2><p>While Elisabeth Kubler-Ross's five stages of grief (denial, anger, bargaining, depression, acceptance) remain widely known, modern grief research recognizes that grief is rarely linear or predictable. You may experience these emotions in any order, revisit stages, or feel multiple emotions simultaneously. There is no 'correct' timeline for grief.</p><h2>Common Grief Responses</h2><ul><li>Emotional: sadness, anger, guilt, anxiety, numbness, relief</li><li>Physical: fatigue, changes in appetite, sleep disruption, weakened immune response</li><li>Cognitive: difficulty concentrating, confusion, preoccupation with the loss</li><li>Behavioral: social withdrawal, restlessness, changes in routines</li></ul><h2>When to Seek Professional Help</h2><p>While grief itself is not a disorder, you may benefit from professional support if:</p><ul><li>Your grief feels overwhelming or unmanageable after several months</li><li>You are unable to carry out daily activities</li><li>You feel persistent hopelessness or thoughts of self-harm</li><li>You are using alcohol or substances to cope</li><li>You feel 'stuck' and unable to move forward</li></ul><h2>Supporting Someone Who Is Grieving</h2><p>The most important thing you can do is simply be present. Listen without trying to fix, avoid cliches like 'everything happens for a reason,' and continue checking in long after the initial loss, when support from others often fades.</p>",
+        "image": { "uri": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800&q=80", "alt": "Sunset over a calm lake with a solitary bench" },
+        "summary": "<p>A compassionate guide to understanding the grief process, recognizing when to seek help, and supporting others through loss.</p>",
+        "resource_topic": ["Grief & Loss", "Self-Care"],
+        "author_name": "Dr. Naomi Williams",
+        "published_date": "2025-12-18T00:00:00"
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Clearpath Counseling & Wellness",
+        "body": "<h2>Our Philosophy</h2><p>At Clearpath, we believe that mental health care is not a luxury -- it is a necessity. We are committed to providing accessible, culturally responsive, evidence-based therapy in an environment of warmth, respect, and unconditional positive regard.</p><h2>Our Approach</h2><p>We take a collaborative approach to treatment. You are the expert on your own life, and we are here to offer professional guidance, clinical tools, and a supportive relationship that empowers you to create meaningful change. We integrate the most effective therapeutic modalities, tailoring our approach to each client's unique needs, values, and goals.</p><h2>Diversity & Inclusion</h2><p>We are committed to serving clients of all backgrounds, identities, and life experiences. Our team includes therapists with expertise in multicultural counseling, LGBTQIA+ affirmative therapy, and culturally responsive care. We strive to create a space where every person feels seen, valued, and understood.</p><h2>Confidentiality</h2><p>Your privacy is paramount. All sessions and records are strictly confidential, protected by state and federal law. We maintain HIPAA-compliant electronic health records and a secure, encrypted telehealth platform.</p>"
+      }
+    },
+    {
+      "id": "page-faq",
+      "type": "node.page",
+      "path": "/faq",
+      "values": {
+        "title": "Frequently Asked Questions",
+        "body": "<h2>How do I know if therapy is right for me?</h2><p>If you're struggling with difficult emotions, relationship challenges, or life changes that affect your daily functioning, therapy can help. You don't need to be in crisis to benefit from professional support. Many people seek therapy for personal growth, self-understanding, and skill-building.</p><h2>How long does therapy take?</h2><p>The duration of therapy varies widely depending on your concerns, goals, and progress. Some clients see meaningful improvement in 8-12 sessions, while others benefit from longer-term work. Your therapist will discuss this with you and regularly review your progress.</p><h2>Do you accept insurance?</h2><p>We are in-network with most major insurance providers, including Blue Cross Blue Shield, Aetna, Cigna, and United Healthcare. We also offer a sliding scale fee for clients who are uninsured or underinsured. Our office manager can verify your benefits before your first appointment.</p><h2>What is the difference between a psychologist and a therapist?</h2><p>All psychologists are therapists, but not all therapists are psychologists. Psychologists hold doctoral degrees (PhD or PsyD) and can conduct psychological testing. Licensed Clinical Social Workers (LCSWs) and Licensed Professional Counselors (LPCs) hold master's degrees. All of our clinicians are fully licensed and trained to provide psychotherapy.</p><h2>Do you offer telehealth?</h2><p>Yes. We offer secure video therapy sessions for clients who prefer the convenience of meeting from home. Telehealth is available for most services. Your therapist can discuss whether telehealth is appropriate for your specific needs.</p>"
+      }
+    }
+  ]
+}

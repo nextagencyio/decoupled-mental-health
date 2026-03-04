@@ -1,0 +1,175 @@
+{
+  "data": {
+    "nodeResources": {
+      "__typename": "NodeResourceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeResource",
+          "id": "resource-anxiety-coping",
+          "title": "5 Evidence-Based Coping Strategies for Anxiety",
+          "path": "/resources/coping-strategies-for-anxiety",
+          "body": {
+            "processed": "<p>Anxiety is one of the most common mental health challenges, affecting over 40 million adults in the United States. While professional therapy is often the most effective treatment, there are evidence-based strategies you can practice on your own to manage anxious thoughts and physical symptoms.</p><h2>1. Deep Breathing (4-7-8 Technique)</h2><p>When anxiety strikes, your body's fight-or-flight response kicks in, causing rapid, shallow breathing. The 4-7-8 breathing technique activates your parasympathetic nervous system, signaling your body to calm down:</p><ul><li>Inhale through your nose for 4 seconds</li><li>Hold your breath for 7 seconds</li><li>Exhale slowly through your mouth for 8 seconds</li><li>Repeat 3-4 cycles</li></ul><h2>2. Grounding with the 5-4-3-2-1 Method</h2><p>This sensory awareness exercise pulls you out of anxious thoughts and into the present moment. Identify 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.</p><h2>3. Cognitive Restructuring</h2><p>Challenge anxious thoughts by asking: Is this thought based on fact or feeling? What evidence supports or contradicts it? What would I say to a friend thinking this? What's the most realistic outcome?</p><h2>4. Progressive Muscle Relaxation</h2><p>Systematically tense and release each muscle group in your body, starting from your toes and working up to your head. Hold each tension for 5 seconds, then release for 15 seconds, noticing the contrast between tension and relaxation.</p><h2>5. Structured Worry Time</h2><p>Designate a specific 15-minute window each day as your 'worry time.' When anxious thoughts arise outside this window, write them down and postpone them to your designated time. This trains your brain that worrying has its place but doesn't need to consume your entire day.</p>",
+            "summary": "Anxiety is one of the most common mental health challenges, affecting over 40 million adults in the United States. While professional therapy is often the most effective treatment, there are evidence-"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80",
+            "alt": "Person practicing meditation in a peaceful outdoor setting",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>Practical, research-backed techniques for managing anxiety, including breathing exercises, grounding, and cognitive restructuring.</p>",
+            "summary": "Practical, research-backed techniques for managing anxiety, including breathing exercises, grounding, and cognitive restructuring."
+          },
+          "resourceTopic": [
+            {
+              "id": "Anxiety",
+              "name": "Anxiety"
+            },
+            {
+              "id": "Self-Care",
+              "name": "Self-Care"
+            },
+            {
+              "id": "Stress Management",
+              "name": "Stress Management"
+            }
+          ],
+          "authorName": "Dr. Naomi Williams",
+          "publishedDate": {
+            "timestamp": 1762754400
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-relationship-communication",
+          "title": "Improving Communication in Your Relationship",
+          "path": "/resources/improving-communication-in-relationships",
+          "body": {
+            "processed": "<p>Communication is the foundation of every healthy relationship, yet it's one of the most common areas where couples struggle. Research by Dr. John Gottman has identified specific communication patterns that predict relationship success or failure. Here's how to build healthier patterns.</p><h2>The Four Horsemen (and Their Antidotes)</h2><p>Gottman identified four destructive communication patterns he calls the 'Four Horsemen of the Apocalypse':</p><ul><li><strong>Criticism</strong> (attacking character) -- Antidote: Use 'I' statements and express needs directly</li><li><strong>Contempt</strong> (expressing superiority or disgust) -- Antidote: Build a culture of appreciation and respect</li><li><strong>Defensiveness</strong> (refusing to take responsibility) -- Antidote: Accept responsibility, even for a small part</li><li><strong>Stonewalling</strong> (withdrawing and shutting down) -- Antidote: Practice self-soothing and take breaks when overwhelmed</li></ul><h2>Active Listening Skills</h2><p>When your partner is speaking, give them your full attention. Put away devices, maintain eye contact, and reflect back what you heard before responding. The goal is understanding, not winning.</p><h2>The Soft Start-Up</h2><p>How you bring up a concern determines 96% of the outcome of the conversation. Start gently by describing what you observed, how it made you feel, and what you need, without blame or criticism.</p><h2>Repair Attempts</h2><p>Every couple fights. What matters is your ability to make and receive repair attempts -- efforts to de-escalate tension and reconnect during or after conflict. A repair can be as simple as 'I'm sorry, let me try that again' or reaching for your partner's hand.</p>",
+            "summary": "Communication is the foundation of every healthy relationship, yet it's one of the most common areas where couples struggle. Research by Dr. John Gottman has identified specific communication patterns"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+            "alt": "Couple having an open conversation while sitting together",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>Learn research-backed communication skills to resolve conflict and strengthen your relationship connection.</p>",
+            "summary": "Learn research-backed communication skills to resolve conflict and strengthen your relationship connection."
+          },
+          "resourceTopic": [
+            {
+              "id": "Relationships",
+              "name": "Relationships"
+            },
+            {
+              "id": "Stress Management",
+              "name": "Stress Management"
+            }
+          ],
+          "authorName": "Carlos Reyes, LCSW",
+          "publishedDate": {
+            "timestamp": 1767592800
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-grief",
+          "title": "Understanding Grief: There Is No Right Way to Mourn",
+          "path": "/resources/understanding-grief-and-loss",
+          "body": {
+            "processed": "<p>Grief is one of the most universal human experiences, yet it remains deeply personal and often misunderstood. Whether you've lost a loved one, a relationship, a job, or a sense of identity, grief is the natural response to any significant loss.</p><h2>Beyond the Five Stages</h2><p>While Elisabeth Kubler-Ross's five stages of grief (denial, anger, bargaining, depression, acceptance) remain widely known, modern grief research recognizes that grief is rarely linear or predictable. You may experience these emotions in any order, revisit stages, or feel multiple emotions simultaneously. There is no 'correct' timeline for grief.</p><h2>Common Grief Responses</h2><ul><li>Emotional: sadness, anger, guilt, anxiety, numbness, relief</li><li>Physical: fatigue, changes in appetite, sleep disruption, weakened immune response</li><li>Cognitive: difficulty concentrating, confusion, preoccupation with the loss</li><li>Behavioral: social withdrawal, restlessness, changes in routines</li></ul><h2>When to Seek Professional Help</h2><p>While grief itself is not a disorder, you may benefit from professional support if:</p><ul><li>Your grief feels overwhelming or unmanageable after several months</li><li>You are unable to carry out daily activities</li><li>You feel persistent hopelessness or thoughts of self-harm</li><li>You are using alcohol or substances to cope</li><li>You feel 'stuck' and unable to move forward</li></ul><h2>Supporting Someone Who Is Grieving</h2><p>The most important thing you can do is simply be present. Listen without trying to fix, avoid cliches like 'everything happens for a reason,' and continue checking in long after the initial loss, when support from others often fades.</p>",
+            "summary": "Grief is one of the most universal human experiences, yet it remains deeply personal and often misunderstood. Whether you've lost a loved one, a relationship, a job, or a sense of identity, grief is t"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800&q=80",
+            "alt": "Sunset over a calm lake with a solitary bench",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "summary": {
+            "processed": "<p>A compassionate guide to understanding the grief process, recognizing when to seek help, and supporting others through loss.</p>",
+            "summary": "A compassionate guide to understanding the grief process, recognizing when to seek help, and supporting others through loss."
+          },
+          "resourceTopic": [
+            {
+              "id": "Grief & Loss",
+              "name": "Grief & Loss"
+            },
+            {
+              "id": "Self-Care",
+              "name": "Self-Care"
+            }
+          ],
+          "authorName": "Dr. Naomi Williams",
+          "publishedDate": {
+            "timestamp": 1766037600
+          }
+        }
+      ]
+    }
+  }
+}
