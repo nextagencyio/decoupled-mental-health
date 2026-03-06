@@ -45,28 +45,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-clients",
               "title": "",
-              "number": "5,000+",
+              "number": "5,000+", "value": "5,000+",
               "label": "Clients Supported"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-therapists",
               "title": "",
-              "number": "12",
+              "number": "12", "value": "12",
               "label": "Licensed Therapists"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-experience",
               "title": "",
-              "number": "15+",
+              "number": "15+", "value": "15+",
               "label": "Years in Practice"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-satisfaction",
               "title": "",
-              "number": "96%",
+              "number": "96%", "value": "96%",
               "label": "Client Satisfaction"
             }
           ],
