@@ -4,6 +4,7 @@ import SetupGuide from './components/SetupGuide'
 import ContentSetupGuide from './components/ContentSetupGuide'
 import { Metadata } from 'next'
 import { checkConfiguration } from '../lib/config-check'
+import { GET_HOMEPAGE_DATA } from '@/lib/queries'
 
 // Enable ISR with 1 hour revalidation
 export const revalidate = 3600
@@ -42,7 +43,20 @@ export default async function Home() {
   }
 
   const client = getClient()
-  const homepageContent = await client.getEntryByPath('/') as any
+
+  // Try getEntryByPath first (works when homepage has path alias '/')
+  let homepageContent = await client.getEntryByPath('/') as any
+
+  // If that didn't return homepage content, try the direct query
+  if (!homepageContent || !homepageContent.heroTitle) {
+    try {
+      const data = await client.raw(GET_HOMEPAGE_DATA)
+      homepageContent = data?.nodeHomepages?.nodes?.[0] || null
+    } catch (error) {
+      console.error('Error fetching homepage data:', error)
+      homepageContent = null
+    }
+  }
 
   // Check if connected but no content exists - show content import guide
   if (!homepageContent) {

@@ -17,7 +17,6 @@ export const GET_ARTICLE_TEASERS = gql`
         ... on NodeArticle {
           body {
             processed
-            summary
           }
           image {
             url
@@ -82,12 +81,18 @@ export const GET_HOMEPAGE_DATA = gql`
         path
         heroTitle
         heroSubtitle
-        heroDescription { processed summary }
-        heroImage { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-        statsItems { ... on ParagraphStatItem { id title description { processed } icon } }
+        heroDescription { processed }
+        heroImage { url alt width height }
+        statsItems {
+          ... on ParagraphStatItem {
+            id
+            number
+            label
+          }
+        }
         featuredItemsTitle
         ctaTitle
-        ctaDescription { processed summary }
+        ctaDescription { processed }
         ctaPrimary
         ctaSecondary
       }
@@ -101,6 +106,7 @@ export const GET_NODE_BY_PATH = gql`
       ... on RouteInternal {
         entity {
           ... on NodePage {
+            __typename
             id
             title
             body {
@@ -108,6 +114,7 @@ export const GET_NODE_BY_PATH = gql`
             }
           }
           ... on NodeArticle {
+            __typename
             id
             title
             body {
@@ -133,31 +140,73 @@ export const GET_NODE_BY_PATH = gql`
             }
           }
           ... on NodeHomepage {
+            __typename
             id
             title
             heroTitle
             heroSubtitle
-            heroDescription {
-              processed
-            }
-            featuresTitle
-            featuresSubtitle
-            featuresItems {
-              ... on ParagraphFeatureItem {
+            heroDescription { processed }
+            heroImage { url alt width height }
+            statsItems {
+              ... on ParagraphStatItem {
                 id
-                title
-                description {
-                  processed
-                }
-                icon
+                number
+                label
               }
             }
+            featuredItemsTitle
             ctaTitle
-            ctaDescription {
-              processed
-            }
+            ctaDescription { processed }
             ctaPrimary
             ctaSecondary
+          }
+          ... on NodeService {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            image { url alt width height }
+            summary { processed }
+            sessionFormat
+            sessionDuration
+            ageGroup
+            insuranceAccepted
+            serviceCategory {
+              ... on TermServiceCategory { id name }
+            }
+          }
+          ... on NodeTherapist {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            image { url alt width height }
+            credentials
+            licenseNumber
+            specialties
+            approaches
+            education { processed }
+            languages
+            acceptingClients
+            therapistRole {
+              ... on TermTherapistRole { id name }
+            }
+          }
+          ... on NodeResource {
+            __typename
+            id
+            title
+            path
+            body { processed summary }
+            image { url alt width height }
+            summary { processed }
+            resourceTopic {
+              ... on TermResourceTopic { id name }
+            }
+            authorName
+            publishedDate { timestamp }
           }
         }
       }
@@ -175,13 +224,15 @@ export const GET_SERVICES = gql`
         created { timestamp }
         ... on NodeService {
           body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          summary { processed summary }
+          image { url alt width height }
+          summary { processed }
           sessionFormat
           sessionDuration
           ageGroup
           insuranceAccepted
-          serviceCategory
+          serviceCategory {
+            ... on TermServiceCategory { id name }
+          }
         }
       }
     }
@@ -197,14 +248,16 @@ export const GET_SERVICE_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          summary { processed summary }
-          sessionFormat
-          sessionDuration
-          ageGroup
-          insuranceAccepted
-          serviceCategory
+            body { processed summary }
+            image { url alt width height }
+            summary { processed }
+            sessionFormat
+            sessionDuration
+            ageGroup
+            insuranceAccepted
+            serviceCategory {
+              ... on TermServiceCategory { id name }
+            }
           }
         }
       }
@@ -222,15 +275,17 @@ export const GET_THERAPISTS = gql`
         created { timestamp }
         ... on NodeTherapist {
           body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          image { url alt width height }
           credentials
           licenseNumber
           specialties
           approaches
-          education { processed summary }
+          education { processed }
           languages
           acceptingClients
-          therapistRole
+          therapistRole {
+            ... on TermTherapistRole { id name }
+          }
         }
       }
     }
@@ -246,16 +301,18 @@ export const GET_THERAPIST_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          credentials
-          licenseNumber
-          specialties
-          approaches
-          education { processed summary }
-          languages
-          acceptingClients
-          therapistRole
+            body { processed summary }
+            image { url alt width height }
+            credentials
+            licenseNumber
+            specialties
+            approaches
+            education { processed }
+            languages
+            acceptingClients
+            therapistRole {
+              ... on TermTherapistRole { id name }
+            }
           }
         }
       }
@@ -273,9 +330,11 @@ export const GET_RESOURCES = gql`
         created { timestamp }
         ... on NodeResource {
           body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          summary { processed summary }
-          resourceTopic
+          image { url alt width height }
+          summary { processed }
+          resourceTopic {
+            ... on TermResourceTopic { id name }
+          }
           authorName
           publishedDate { timestamp }
         }
@@ -293,12 +352,14 @@ export const GET_RESOURCE_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
-          summary { processed summary }
-          resourceTopic
-          authorName
-          publishedDate { timestamp }
+            body { processed summary }
+            image { url alt width height }
+            summary { processed }
+            resourceTopic {
+              ... on TermResourceTopic { id name }
+            }
+            authorName
+            publishedDate { timestamp }
           }
         }
       }
